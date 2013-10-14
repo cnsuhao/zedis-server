@@ -1,4 +1,32 @@
-zedis-server是由ytzhang0828@qq.com创建的面向服务架构的为服务器并附带类似servlet的轻型框架。
-本服务器采用redis协议方便不同语言客户端调用。但该服务器使用java语言开发且暂时只能用java语言做服务器端服务开发。
+zedis-server是由ytzhang0828@qq.com创建的面向服务架构的为服务器并附带类似servlet的轻型框架。 本服务器采用redis协议方便不同语言客户端调用。但该服务器使用java语言开发且暂时只能用java语言做服务器端服务开发。
 
 该服务器使用apache2.0版权协议开源，服务器用到的相关开源组件遵循原有组件协议。
+
+<b>更详细一点的介绍如下</b>
+
+1.Zedis Server是基于服务架构的基础中间件，由ytzhang0828@qq.com开发并开源。
+
+2.该中间件目前已广泛应用于17k.com的多个项目（书服务，数据盒子，视觉ugc，订阅服务等）中。可以说承载着网站的最重要的，绝大部分的阅读类读，写服务。
+
+3.Zedis Server应用简洁、安全、高效的redis协议，加上实现了类似servlet的服务插件开发框架。可实现敏捷高效的开发，和稳定高效的服务。Zedis Server内置基于web的透视工具方便使用者开发服务，自定义二级协议数据透视及应用端测试。应用上，基本可以说是零学习成本。
+
+4.与此同时，开发了多个子项目（工具、框架），是Zedis Server更加简单易用，并适合大规模、分布式业务开发，如：
+
+	ZPathParser：一个即可用于web端（替换struts2等），又可用于Zedis Server服务开发的控制层框架。基于anotation模式，强大、简单、易用。
+	ZedisDeployTool：本身基于Zedis Server的部署服务端，和可视化部署客户端工具，同时支持部署web项目。
+	另外还有基于Zedis文件同步工具（分布式小文件存储系统原型），Zedis服务监控工具等。
+
+5.Zedis Server为了保持简单、易用和轻量级，目前基本在做按需开发。但也存在长远规划的路线图，如构建基于服务端 proxy的或者控制器的分布式实现方式；增强透视工具；监控工具更加高级智能化; 增加Zedis文件同步工具可继续发展问功能全面的分布式小文件存储系统等。
+目前仅开源了核心服务器zedis-server。其它一些子项目将陆续开源。
+
+开发向导
+
+1.<a href="http://git.oschina.net/zhyt710/zedis-server/wikis/快速入门">快速入门</a>
+
+2.<a href="http://git.oschina.net/zhyt710/zedis-server/wikis/服务（插件）开发向导">服务（插件）开发向导</a>
+
+3.<a href="http://git.oschina.net/zhyt710/zedis-server/wikis/java客户端开发向导">Java客户端开发向导</a>
+
+4.<a href="http://git.oschina.net/zhyt710/zedis-server/wikis/python客户端开发向导">Python客户端开发向导</a>
+
+
